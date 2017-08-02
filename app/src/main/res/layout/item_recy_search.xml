@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tvaddr_recy_item"
+            android:layout_width="0dp"
+            android:textColor="#000000"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left|center_vertical"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/icon_recy_item"
+            android:clickable="true"
+            android:src="@android:drawable/ic_delete"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="2017-07-24-00:00"
+        android:id="@+id/tvdate_recy_item"
+        android:textSize="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="4dp"/>
+
+
+</android.support.v7.widget.CardView>
