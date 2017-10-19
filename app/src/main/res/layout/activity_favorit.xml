@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4482b2c5"
+    tools:context="com.kim0420.ddukbbokki7566.FavoritActivity">
+
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="저장된 즐겨찾기가 없습니다."
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="invisible"
+        />
+    
+    
+</RelativeLayout>

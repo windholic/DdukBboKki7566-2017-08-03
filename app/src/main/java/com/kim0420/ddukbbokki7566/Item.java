@@ -16,6 +16,11 @@ public class Item implements Serializable{
     String roadAddress;
     Integer mapx;
     Integer mapy;
+    String favcomment;
+    Boolean willdelete=false;
+    Boolean favo=false;
+    double nmapx=0;
+    double nmapy=0;
 
     public Item() {
     }
@@ -27,6 +32,7 @@ public class Item implements Serializable{
         this.roadAddress = roadAddress;
         this.mapx = mapx;
         this.mapy = mapy;
+        this.favcomment="";
     }
 
 

@@ -1,52 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.kim0420.ddukbbokki7566.SearchActivity">
+    tools:context="com.kim0420.ddukbbokki7566.SearchActivity"
+    >
 
-
-    <EditText
-        android:id="@+id/et"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:background="#54e5625c" />
 
-    <Button
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height= "wrap_content"
-        android:onClick="clickbtn"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/tv_search"
-            android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textSize="24sp"
-            android:text="검색 기록이 없습니다."
-            android:textAlignment="center"/>
+            android:orientation="horizontal">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recy_search"
+            <EditText
+                android:background="#d0ffffff"
+                android:id="@+id/et"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent"
+                android:inputType="text"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="36dp"
+                android:elevation="4dp"
+                app:cardBackgroundColor="#c4ffffff"
+                app:cardCornerRadius="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                >
+
+                <ImageView
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="clickbtn"
+                    android:clickable="true"
+                    android:src="@drawable/btn02"/>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="invisible"
-            >
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="24sp"
+                android:text="검색 기록이 없습니다."
+                android:textAlignment="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="4dp"
+                >
 
 
-        </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy_nsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="4dp">
+
+
+            </android.support.v7.widget.RecyclerView>
 
 
 
 
-    </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
 
 
 
-</LinearLayout>
+</RelativeLayout>

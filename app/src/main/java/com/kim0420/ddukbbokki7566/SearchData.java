@@ -14,4 +14,10 @@ public class SearchData implements Serializable{
         this.addr = addr;
         this.date = date;
     }
+
+    public SearchData(String addr){
+        this.addr = addr;
+        this.date = null;
+
+    }
 }
